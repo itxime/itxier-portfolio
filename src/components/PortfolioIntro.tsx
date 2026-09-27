@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 export default function PortfolioIntro() {
     return (
         <section className="portfolio-intro">
@@ -24,9 +26,9 @@ export default function PortfolioIntro() {
                     View My Work
                 </a>
 
-                <a href="#contact" className="secondary-action">
+                <Link href="/contact" className="secondary-action">
                     Contact Me
-                </a>
+                </Link>
             </div>
 
         </section>
