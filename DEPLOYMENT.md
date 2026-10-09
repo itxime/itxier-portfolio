@@ -54,3 +54,17 @@ Check all portfolio and project routes, images, and navigation over HTTPS.
 An empty JSON POST to `/api/contact` should return 400 with field errors;
 this checks server execution without sending email. The site owner should
 submit the final real delivery test through `/contact`.
+
+## CleanFlow sample demo dependency
+
+The demo at `/projects/cleanflow/demo` consumes the repository-contained archive
+`vendor/cleanflow-ui-0.1.2.tgz` through the relative npm dependency and lockfile.
+Include that archive and the lockfile in a future commit so `npm ci` works in a
+fresh checkout and Workers Builds. No path outside the repository, npm publication,
+Python service, or new Cloudflare binding is required.
+
+The wrapper creates `SampleProcessingAdapter` inside its client boundary. Only
+fictional data is available; there is no upload control or processing endpoint.
+Before deployment, verify the demo's lazy assets and 8/4/2/14 metrics, First/Last
+confirmation invalidation, exact CSV downloads, mobile layout, and existing
+portfolio routes/contact validation. This local integration is not a deployment.

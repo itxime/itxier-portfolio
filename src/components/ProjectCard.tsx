@@ -3,7 +3,7 @@ type ProjectCardProps = {
     category: string;
     description: string;
     technologies: string[];
-    image: string;
+    image?: string;
     projectUrl: string;
 };
 
@@ -17,11 +17,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <article className="project-card">
-            <img
+            {image && <img
                 className="project-image"
                 src={image}
                 alt={`${title} project screenshot`}
-            />
+            />}
 
             <h3>{title}</h3>
             <p>{category}</p>

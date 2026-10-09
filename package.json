@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@opennextjs/cloudflare": "1.20.6",
+    "cleanflow-ui": "file:vendor/cleanflow-ui-0.1.2.tgz",
     "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8"

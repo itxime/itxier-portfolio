@@ -1,0 +1,17 @@
+.shell {
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+    .shell :global(.main-navigation) {
+        padding: 16px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .shell :global(.navigation-links) {
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}

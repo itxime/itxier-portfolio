@@ -41,6 +41,13 @@ export default function FeaturedProjects() {
                     image="/images/starry-atlantic/homepage.png"
                     projectUrl="/projects/starry-atlantic-pleiades"
                 />
+                <ProjectCard
+                    title="CleanFlow"
+                    category="CSV Cleaning &amp; Duplicate Review"
+                    description="A CSV-cleaning workflow with field normalization, multi-column duplicate review, explicit removal confirmation, and exact CSV export. Try it with fictional sample data."
+                    technologies={["Python", "Pandas", "React", "TypeScript"]}
+                    projectUrl="/projects/cleanflow"
+                />
             </div>
         </section>
     );
